@@ -1,0 +1,39 @@
+# Site settings
+name: VenpleD
+email: blueworld1213@163.com
+author: VenpleD
+url: http://venpled.top
+resume_site: ""
+github: https://github.com/VenpleD/
+baseurl: ""
+description: Keep trying no matter how hard it seems. it will get easier.
+meta_description: "大标题"
+motto: It's my creed.
+banner: "小标题"
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: VenpleD
+highlighter: Pygments
+
+# Build settings
+markdown: kramdown
+
+baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+
+FB:
+  comments :
+    provider : "提供者"
+    duoshuo:
+        short_name : "多多昵称"
+    disqus :
+        short_name : "disqus昵称"
+    # facebook :
+    #   appid : 123
+    #   num_posts: 5
+    #   width: 580
+    #   colorscheme: light
