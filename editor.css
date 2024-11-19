@@ -1,0 +1,333 @@
+blockquote,body,button,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    overflow: auto;
+}
+
+#root {
+    overflow: auto;
+}
+
+.title-wrapper {
+    position: relative;
+    z-index: 2;
+    background-color: initial;
+}
+
+.autofit-textarea-wrapper {
+    /* min-height: .90667rem; */
+    width: 100%;
+}
+
+.p-post-article-title-error {
+    color: #ff5d5d;
+    font-size: .37333rem;
+    line-height: .42667rem;
+    margin: 4PX 0 0
+}
+
+.autofit-textarea-wrapper textarea {
+    overflow: hidden;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.autofit-textarea-content {
+    width: 100%;
+    display: block;
+    visibility: hidden;
+    font-size: 24PX;
+    line-height: 34PX;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-break: anywhere;
+    padding: 0;
+}
+
+.p-post-article-title-input {
+    display: block;
+    color: #222;
+    width: 100%;
+    min-height: 34PX;
+    font-weight: 700;
+    font-size: 24PX;
+    line-height: 34PX;
+    background-color: #fff;
+    resize: none;
+    word-break: break-all;
+    outline: none;
+    overflow: hidden
+}
+
+.p-post-article-title-input:empty:before {
+    color: #cacaca;
+    content: attr(data-placeholder);
+    display: block;
+}
+
+.p-post-article-title-input::-webkit-input-placeholder {
+    color: #cacaca;
+    opacity: 1;
+}
+
+.p-post-article-title-input::-webkit-input-placeholder,.p-post-article-title-input::placeholder {
+    color: #cacaca;
+    opacity: 1;
+}
+
+.p-post-article-title-error {
+    color: #ff5d5d;
+    font-size: .37333rem;
+    line-height: .42667rem;
+    margin: 4PX 0 0;
+}
+
+.syl-placeholder {
+    color: rgba(0,0,0,.6);
+    font-style: italic;
+    left: .53333rem;
+    top: .53333rem;
+    pointer-events: none;
+    position: absolute;
+}
+
+#syl-editor .syl-placeholder {
+    font-size: .45333rem;
+    color: #cacaca;
+    line-height: .8rem;
+    top: 0!important;
+    z-index: 1!important;
+    left: .42667rem;
+    font-style: normal;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.autofit-textarea-wrapper {
+    padding: .32rem 16PX 18PX .42667rem
+}
+
+.autofit-textarea-wrapper-internal {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.ProseMirror {
+    padding-left: 16PX;
+    padding-right: 16PX;
+    overflow: initial;
+    font-family: PingFang SC,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    caret-color: #1a74ff;
+    color: #222;
+    font-size: 18PX;
+    text-align: justify
+}
+
+.ProseMirror:first-child {
+    margin-top: 0!important
+}
+
+#syl-editor .ProseMirror-focused {
+    word-wrap: break-word;
+-webkit-nbsp-mode: space;
+line-break: after-white-space;
+-webkit-text-size-adjust: none;
+-webkit-user-modify: read-write;
+}
+
+#syl-editor tt-image {
+    position: relative;
+    z-index: 9998
+}
+
+#syl-editor .ProseMirror-hideselection ::selection {
+    background: transparent;
+}
+
+#syl-editor .ProseMirror-hideselection ::-moz-selection {
+    background: transparent;
+}
+
+#syl-editor .ProseMirror-hideselection {
+    caret-color: transparent;
+}
+
+.ProseMirror table {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ProseMirror .tableWrapper {
+    margin: .53333rem 0;
+    padding: 0;
+    overflow-x: scroll
+}
+
+.ProseMirror .tableWrapper::-webkit-scrollbar {
+    width: .18667rem;
+    height: .18667rem
+}
+
+.ProseMirror .tableWrapper::-webkit-scrollbar-thumb {
+    border-radius: .16rem;
+    border: .10667rem solid #fff;
+    background-color: rgba(0,0,0,.2)
+}
+
+.ProseMirror .tableWrapper:hover::-webkit-scrollbar-thumb {
+    border: .05333rem solid #fff
+}
+
+.ProseMirror .tableWrapper td {
+    height: 1.06667rem;
+    padding: .24rem .32rem;
+    font-size: .42667rem;
+    line-height: .58667rem;
+    color: #222;
+    min-width: 2.34667rem
+}
+
+.ProseMirror .tableWrapper .selectedCell {
+    caret-color: transparent
+}
+
+.ProseMirror .tableWrapper .selectedCell:after {
+    background: #1a74ff;
+    opacity: .2
+}
+
+.ProseMirror p {
+    margin-bottom: .42667rem;
+    font-weight: 400;
+    line-height: 1.6666
+}
+
+.ProseMirror blockquote p {
+    margin: 0
+}
+
+.ProseMirror pre,.ProseMirror tt-image {
+    font-size: .48rem;
+    margin-bottom: .42667rem
+}
+
+.ProseMirror hr {
+    width: 100%;
+    padding-bottom: .48rem;
+    position: relative;
+    border: none
+}
+
+.ProseMirror hr:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #e8e8e8;
+    width: 100%;
+    height: 1PX;
+    transform: scaleY(.5);
+    transform-origin: 0 0
+}
+
+.ProseMirror li {
+    font-size: .48rem
+}
+
+.ProseMirror ::selection {
+    color: inherit!important;
+    background-color: #a8d1ff!important
+}
+
+.ProseMirror ul {
+    list-style: none;
+    line-height: .85333rem;
+    margin: 18PX 0;
+    padding-left: 12PX
+}
+
+.ProseMirror ul li:before {
+    content: "";
+    position: absolute;
+    width: 4PX;
+    height: 4PX;
+    border-radius: 50%;
+    background: #222;
+    transform: translate(-12PX,15PX)
+}
+
+.ProseMirror ol {
+    line-height: .85333rem;
+    margin: 18PX 0;
+    list-style-type: decimal
+}
+
+.ProseMirror ol li:nth-of-type(n+10):before {
+    margin-right: .5em!important
+}
+
+.ProseMirror ol li:nth-of-type(n+100):before {
+    margin-right: 1em!important
+}
+
+#syl-editor .tableWrapper {
+    margin-left: .21333rem;
+    margin-top: .21333rem;
+    overflow-x: auto;
+}
+
+#syl-editor .tableWrapper td,#syl-editor .tableWrapper th {
+    position: relative;
+    min-width: 1em;
+    border: .02667rem solid #d8d8d8;
+    padding: .08rem .13333rem;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#syl-editor .tableWrapper .column-resize-handle {
+    position: absolute;
+    right: -.02667rem;
+    top: 0;
+    bottom: 0;
+    width: .05333rem;
+    z-index: 50;
+    background-color: #1a74ff;
+    pointer-events: none;
+}
+
+#syl-editor table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    overflow: hidden;
+}
+
+#syl-editor .resize-cursor {
+    cursor: col-resize!important
+}
+
+#syl-editor .selectedCell:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(200,200,255,.4);
+    pointer-events: none;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://10.2.203.197:8080/common_inapp/TTEditor/output/ios/ios.html -->
+<html style="font-size: calc(100vw/10);">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>TTEditor</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover,minimal-ui,shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="ios.css">
+    <link rel="stylesheet" type="text/css" href="editor.css">
+    <script src="lib.js"></script>
+    <script src="ios.js"></script>
+</head>
+
+<body>
+    <!--  <button onclick="ZSSEditor.insertVideo('http://10.2.210.210:8080/after.mp4',Math.random().toFixed(2),'http://p3.pstatp.com/list/190x124/18a30006e38fc75cc9c8','3')" style="width:200px;
+     height:100px;">insert</button> -->
+    <div id="root">
+        <div class="autofit-textarea-wrapper">
+            <div class="autofit-textarea-wrapper-internal">
+                <pre class="autofit-textarea-content">请输入标题（2~30个字）</pre>
+                <textarea class="p-post-article-title-input" placeholder="请输入标题（2~30个字）" autocomplete="off"></textarea>
+            </div>
+        </div>
+        <div id="syl-editor" style="position: relative;">
+            <span class="syl-placeholder" aria-label="请输入正文" style="z-index: 99;">请输入正文</span>
+            <div>
+                <div id="editor-mirror" class="ProseMirror" contenteditable="true" role="textbox" style="min-height: 885px;">
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var __ttua__ = navigator.userAgent.toLowerCase();
+        var is_android = /android/.test(__ttua__);
+        if (is_android) {
+            document.body.className = "android";
+        }
+        ZSSEditor.init();
+
+        // var isToutiaoUa =  /(news|newssocial|explore|newsarticle|news_?article)( |\/)(\d\.\d\.\d)/i.test(__ttua__);
+        // if(!(isToutiaoUa && !is_android)){
+        //     ZSSEditor.$editor.focus();
+        // }
+    </script>
+
+</body>
+
+</html>
